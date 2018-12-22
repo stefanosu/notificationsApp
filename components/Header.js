@@ -1,13 +1,19 @@
 import React, {Component} from 'react';
 
 
-class Header extends React.Component {
+class Header extends Component {
 	render() {
 	  return(
 	  	<div className="header">
-	  	  <div className="fa fa-more"></div> 
+	  	  <div className="menuIcon"> 
+	  	  <div className="dashTop"></div> 
+	  	  <div className="dashBottom"></div> 
+	  	  <div className="circle"></div> 
+			</div>	
 
-	  	  <span className="title">Timeline</span>
+
+	  	  <span className="title">
+	  	  	 {this.props.title}
 
 	  	  <input 
 	  	  	type="text"
@@ -21,4 +27,4 @@ class Header extends React.Component {
 	}
 }
 
-
+export default Header;
