@@ -23,12 +23,10 @@ class ActivityItem extends Component{
 			</div>
 
 		)
+	
 	}
+
 }
-
-
-
-
 
 
 
